@@ -1,4 +1,4 @@
-import { Role } from "@er-triage/shared";
+import { Role } from "@/lib/shared";
 import {
   Activity,
   BedDouble,

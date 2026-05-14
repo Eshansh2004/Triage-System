@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo } from "react";
-import { Role } from "@er-triage/shared";
+import { Role } from "@/lib/shared";
 import { ClipboardList } from "lucide-react";
 import { ActivityFeedPanel } from "@/components/dashboard/activity-feed-panel";
 import { AddPatientForm } from "@/components/dashboard/add-patient-form";

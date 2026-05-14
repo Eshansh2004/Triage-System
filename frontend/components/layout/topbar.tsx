@@ -1,4 +1,4 @@
-import { Role } from "@er-triage/shared";
+import { Role } from "@/lib/shared";
 import { Bell, LogOut, Search, ShieldPlus, UserRound } from "lucide-react";
 import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";

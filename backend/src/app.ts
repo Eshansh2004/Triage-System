@@ -6,9 +6,13 @@ import { errorHandler, notFoundHandler } from "./middlewares/error.middleware";
 export const createApp = () => {
   const app = express();
 
+  const allowedOrigins = process.env.FRONTEND_URL
+    ? [process.env.FRONTEND_URL]
+    : true; // allow all in local dev
+
   app.use(
     cors({
-      origin: true,
+      origin: allowedOrigins,
       credentials: true,
     }),
   );

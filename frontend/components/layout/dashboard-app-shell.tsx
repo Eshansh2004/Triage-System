@@ -1,6 +1,6 @@
 "use client";
 
-import { Role } from "@er-triage/shared";
+import { Role } from "@/lib/shared";
 import { DashboardShell } from "@/components/layout/dashboard-shell";
 import { Sidebar } from "@/components/layout/sidebar";
 import { Topbar } from "@/components/layout/topbar";

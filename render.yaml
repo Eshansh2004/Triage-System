@@ -1,0 +1,46 @@
+services:
+  - type: web
+    name: er-triage-backend
+    runtime: node
+    rootDir: .
+    buildCommand: cd backend && npm install && npm run build
+    startCommand: node backend/dist/server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: JWT_EXPIRES_IN
+        value: 8h
+      - key: XAI_API_KEY
+        sync: false
+      - key: XAI_BASE_URL
+        value: https://api.x.ai/v1
+      - key: XAI_MODEL
+        value: grok-3
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_BASE_URL
+        value: https://api.groq.com/openai/v1
+      - key: GROQ_MODEL
+        value: llama-3.3-70b-versatile
+      - key: AI_REQUEST_TIMEOUT_SECONDS
+        value: 30
+      - key: AI_MAX_TOKENS
+        value: 500
+      - key: DEFAULT_GENERAL_BEDS
+        value: 12
+      - key: DEFAULT_CRITICAL_BEDS
+        value: 6
+      - key: SIMULATION_ENABLED
+        value: true
+      - key: SIMULATION_TICK_SECONDS
+        value: 30
+      - key: SEED_ENABLED
+        value: true
+      - key: FRONTEND_URL
+        sync: false

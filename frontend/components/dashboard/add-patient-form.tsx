@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Role } from "@er-triage/shared";
+import { Role } from "@/lib/shared";
 import { AlertTriangle, Bot, ChevronDown, ChevronUp, ClipboardPlus, FlaskConical, Stethoscope } from "lucide-react";
 import { DemoPatientModal } from "@/components/dashboard/demo-patient-modal";
 import { Button } from "@/components/ui/button";

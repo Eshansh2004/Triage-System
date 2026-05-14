@@ -1,6 +1,6 @@
 "use client";
 
-import { DataSource, LlmStatus, PatientGuidancePromptKey, PatientStatus, Priority, RiskFlag } from "@er-triage/shared";
+import { DataSource, LlmStatus, PatientGuidancePromptKey, PatientStatus, Priority, RiskFlag } from "@/lib/shared";
 import { create } from "zustand";
 import { ApiClientError, apiFetch } from "@/lib/api-client";
 import { useSystemStore } from "@/store/use-system-store";

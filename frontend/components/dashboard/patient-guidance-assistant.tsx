@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { LlmStatus, PatientGuidancePromptKey } from "@er-triage/shared";
+import { LlmStatus, PatientGuidancePromptKey } from "@/lib/shared";
 import { Bot, Sparkles, X } from "lucide-react";
 import { createPortal } from "react-dom";
 import { Button } from "@/components/ui/button";

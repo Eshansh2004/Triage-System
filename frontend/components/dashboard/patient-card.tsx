@@ -1,6 +1,6 @@
 "use client";
 
-import { LlmStatus, Priority, Role } from "@er-triage/shared";
+import { LlmStatus, Priority, Role } from "@/lib/shared";
 import { Bot, Clock3 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { type QueuePatient } from "@/store/use-patient-store";

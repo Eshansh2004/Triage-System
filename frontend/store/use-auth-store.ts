@@ -1,6 +1,6 @@
 "use client";
 
-import { Role } from "@er-triage/shared";
+import { Role } from "@/lib/shared";
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 import { ApiClientError, apiFetch } from "@/lib/api-client";
